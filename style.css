@@ -1,0 +1,51 @@
+h1{
+  text-align: center;
+}
+
+.header{
+  text-align: left;
+  }
+#description{
+  opacity: 0.6;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  color: #222;
+  width: 60%;
+  background: #ddd;
+  border: #aaa solid 2px;
+  border-radius: 2px;
+  box-shadow: 0px 4px 10px;
+align-items:         center;
+}
+#survey-form{
+  background: #ddd;
+width: 2fr;
+}
+label{
+  display: flex;
+}
+.inputs{
+
+width: 80%;
+}
+
+@media screen and (max-width:800px){
+  .container{
+    width: 80%;
+  }
+  .item1{
+    background-color: #000;
+    color: white;
+  }
+  .item2{
+    color: red;
+  }
+
+}

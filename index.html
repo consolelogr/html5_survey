@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 SURVEY</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="survey.css">
+  <title>Survey survival</title>
+</head>
+<body>
+  <div class="header">
+    <h1 id="title">Survey example</h1>
+  </div>
+
+<div class="container">
+  <p id="description">Code editor survey 2018</p>
+
+  <form id="survey-form" action="/my-handling-form-page" method="post">
+
+    <div>
+      <label for="name-label" id="name-label"  >Name:</label>
+      <input type="text"  id="name"required class="inputs"  name="name"
+      placeholder="Name">
+    </div>
+    <div>
+      <label for="mail" id="email-label">E-mail:</label>
+      <input type="email"  id="email" required placeholder="E-mail"  class="inputs" name="user_mail">
+    </div>
+    <div>
+      <label for="number" id="number-label">Age:</label>
+      <input type="number"  id="number" required placeholder="Age (0-120)"  class="inputs" name="user_number" min="0" max="120">
+    </div>
+    <div>
+      <br>
+      Choose Editor and Rank it <br>
+    <select id="dropdown" name="editors"  >
+   <option value="Atom">Atom</option>
+   <option value="Sublime">Sublime</option>
+   <option value="VSCode">VSCode</option>
+   <option value="Notepad++">Notepad++</option>
+ </select>
+     
+<div>
+  <br>
+                <input type="radio" name="doing" value="fantastic">Fantastic<br>
+                <input type="radio" name="doing" value="super">Super<br>
+                <input type="radio" name="doing" value="great">Great<br>
+                <br>
+     </div> 
+     <input type="checkbox" name="vehicle" value="Bike"> I use desktop<br>
+  <input type="checkbox" name="vehicle" value="Car" checked> I use laptop<br>
+     
+    <div>
+      <br>
+      <label for="msg">Comment below</label>
+      <textarea id="msg" class="inputs"name="user_message"></textarea>
+    </div>
+      <br>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+
+</div>
+  <br>
+
+</body>
+</html>
